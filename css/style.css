@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url(./fonts.css);
 
 .wrapper{
     position: relative;
@@ -103,10 +104,9 @@ header{
 }
 
 
-/* ======================================================================== */
+/* ===========================team============================================= */
 section{
     margin-top: 50px;
-
 }
 .section-wrap{
     max-width: 1280px;
@@ -117,12 +117,10 @@ section{
     margin-left: auto;
 }
 .item{
-        
     max-width: 386px;
     max-height: 532px;
     position: relative;
     margin-bottom: 10px;
-    
 }
 
 .info{
@@ -131,6 +129,8 @@ section{
     position: absolute;
     bottom: 22px;
     left: 22px;
+    max-width: 341px;
+    max-height: 114px;
 }
 .name{
     color: #37393F;
@@ -158,7 +158,6 @@ line-height: 1.35;
 .item:hover::before{
     opacity: 1;
 }
-
 .social-link-list{
  position: absolute;
  top: 50%;
@@ -171,7 +170,6 @@ line-height: 1.35;
 .item:hover .social-link-list{
     opacity: 1;
 }
-
 .social-link-item:hover > a{
     border-radius: 50%;
     border: 2px solid white;
@@ -196,7 +194,7 @@ line-height: 1.35;
     right: 10px;
     z-index: 2;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: rgb(255, 166, 0);
 }
 .test-conteiner{
     position: relative;
@@ -227,7 +225,10 @@ line-height: 1.35;
     left: 30px;
 }
 
-.conteiner3 > img{
+.help-conteiner{
+    position: relative;
+}
+.help-conteiner > img{
     position: fixed;
     bottom: 20px;
     left: 30px;
@@ -235,7 +236,20 @@ line-height: 1.35;
     background-color: aquamarine;
     border-radius: 50%;
 }
-.conteiner3 > img:hover{
+.help-conteiner >img:hover{
     background-color: green;
     cursor: pointer;
+}
+.help-menu{
+    padding: 20px;  
+    background-color: green;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 60px;
+    left: 30px;
+    text-align: center;
+    visibility: hidden;
+}
+.help-conteiner:hover > .help-menu{
+    visibility: visible;
 }
